@@ -3,7 +3,8 @@
     <script>
       function oninput()
         {
-          document.getElementsByClassName("SUDNOh1")[0].setAttribute('style','font-size:100');
+          let s = document.getElementsByClassName("ranger")[0].value;
+          document.getElementsByClassName("SUDNOh1")[0].setAttribute('style',`font-size:${s}px`);
           return true;
         }
     </script>
