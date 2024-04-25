@@ -13,11 +13,14 @@
   <body>
     <div style="text-align:center">
       <h1 class='SUDNOh1' style="font-size:40px">SUDNO</h1>
-      <input style="jsst()" class="ranger" type="range" min=0 max=200 step=1 oninput="jsoninput()">
+      <input style="jsst()" class="ranger" type="range" min=0 max=200 step=1 value=40 oninput="jsoninput()">
     </div>
   </body>
 </html>
 <script>
-  let a = Math.sqrt(this.innerWidth)*10;
-  document.getElementsByClassName("ranger")[0].setAttribute('style',`width:${a}px`);
+  while (true)
+  {
+    let a = Math.sqrt(this.innerWidth)*10;
+    document.getElementsByClassName("ranger")[0].setAttribute('style',`width:${a}px`);
+  }
 </script>
