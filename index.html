@@ -14,7 +14,6 @@
     <div style="text-align:center">
       <h1 class='SUDNOh1' style="font-size:40px">SUDNO</h1>
       <input style="jsst()" class="ranger" type="range" min=0 max=200 step=1 value=40 oninput="jsoninput()">
-      <input style="jsst()" class="ranger2" type="range" min=0 max=200 step=1 value=40 oninput="jsoninput()">
     </div>
   </body>
 </html>
@@ -23,8 +22,7 @@
   {
     setInterval(function () {
     let a = Math.sqrt(this.innerWidth)*10;
-    let b = document.getElementsByClassName("ranger2")[0].value;
-    document.getElementsByClassName("ranger")[0].setAttribute('style',`width:${ab}px;`);});
+    document.getElementsByClassName("ranger")[0].setAttribute('style',`width:${a}px;`);});
   }
   refresher();
 </script>
